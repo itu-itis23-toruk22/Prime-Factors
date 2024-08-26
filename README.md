@@ -13,7 +13,7 @@ The `is_prime(num)` function checks and return boolean if a given integer num is
 ### 3. Greatest Common Divisor
 The `gcd(num1, num2)` function calculates the greatest common divisor of two integers using the Euclidean algorithm.
 
-##How It Works
+## How It Works
 The program runs an infinite loop in the main function where the user can choose one of the three operations:
 
 **Prime Factors**: Prompts the user to input a number and then displays its prime factors.
