@@ -16,9 +16,9 @@ The `gcd(num1, num2)` function calculates the greatest common divisor of two int
 ## How It Works
 The program runs an infinite loop in the main function where the user can choose one of the three operations:
 
-**Prime Factors**: Prompts the user to input a number and then displays its prime factors.
-**Is Prime**: Prompts the user to input a number and checks if it is a prime number.
-**Greatest Common Divisor**: Prompts the user to input two numbers and calculates their GCD.
+**Prime Factors**: Prompts the user to input a number and then displays its prime factors.<br>
+**Is Prime**: Prompts the user to input a number and checks if it is a prime number.<br>
+**Greatest Common Divisor**: Prompts the user to input two numbers and calculates their GCD.<br>
 The user can exit the program by choosing the option 0.
 
 ## License
