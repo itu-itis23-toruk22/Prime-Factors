@@ -15,7 +15,7 @@ def get_prime_factors(num):
                 num /= divisor
             else:
                 divisor += 1
-            
+        print(factors)
         return factors
         
     print("Invalid number!")
@@ -50,6 +50,13 @@ def positive_divisors(num1):
     divisor = 1
     divisors = []
     
+    if control(num1):
+        pass
+    else:
+        print("Invalid number!")
+        return divisors
+    
+    
     while num1 >= divisor:
         if num1 % divisor == 0:
             divisors.append(divisor)
@@ -60,10 +67,28 @@ def positive_divisors(num1):
 
 #-------------------------------------------
 
-def main():
+def euler_totient(num1):
+    
+    if control(num1, 1):
+        factors = get_prime_factors(num1)
+        used = 1
+    
+        for i in factors:
+            if used != i:
+                num1 *= (i-1)/i
+                used = i
+                
+        return int(num1)
+        
+    print("Invalid number!")
+    return 0    
+
+#-------------------------------------------
+
+def user_interface():
     while True:
         
-        inp = int(input("\nChoose operations:\n1-Prime Factors\n2-Is Prime\n3-Greatest Common Divisor\n4-Least Common Multiple\n5-Positive Factors\n0-Exit\n"))
+        inp = int(input("\nChoose operations:\n1-Prime Factors\n2-Is Prime\n3-Greatest Common Divisor\n4-Least Common Multiple\n5-Positive Factors\n6-Coprime Number\n0-Exit\n"))
         num1 = 1
         num2 = 1
         if inp == 0:
@@ -90,10 +115,13 @@ def main():
             num1 = int(input("Enter a number: "))
             print("Positive factors of {} are {}".format(num1, positive_divisors(num1)))
             
+        elif inp == 6:
+            num1 = int(input("Enter a number: "))
+            print("Number of relatively prime numbers with {} between 1 to {} is {}.".format(num1, num1, euler_totient(num1)))
+            
         else:
             print("Invalid command!")
             
-    
 #-------------------------------------------
 
-main()
+user_interface()
