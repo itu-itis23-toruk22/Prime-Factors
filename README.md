@@ -30,7 +30,7 @@ The program runs an infinite loop in the main function where the user can choose
 **Greatest Common Divisor**: Prompts the user to input two numbers and calculates their GCD.<br>
 **Least Common Multiple**: Prompts the user to input two numbers and calculates their LCM.<br>
 **Positive Divisors**: Prompts the user to input a number and then displays its positive divisors.<br>
-**Coprime Number**: Promts the user to input a number and then displays number of smaller relatively prime number
+**Coprime Number**: Promts the user to input a number and then displays number of smaller relatively prime number.<br>
 The user can exit the program by choosing the option 0.
 
 ## License
